@@ -1,6 +1,6 @@
 # Presto.it
 
-Tecnologies : HTML - CSS - BOOTSTRAP - JAVASCRIPT - PHP - LARAVEL - LARAVEL LIVEWIRE
+Tecnologies : HTML - CSS - BOOTSTRAP - JAVASCRIPT - SQL - MY SQL Workbench - PHP - LARAVEL - LARAVEL LIVEWIRE
 
 Description: 
   Title : Presto.it
