@@ -7,7 +7,7 @@
                 <div class="card-header">{{ __('Autentificazione') }}</div>
 
                 <div class="card-body">
-                   
+
 
                     <form method="POST" action="{{ route('two-factor.login') }}">
                         @csrf
@@ -31,8 +31,8 @@
                                 <button type="submit" class="btn btn-primary col-6">
                                     {{ __('Accedi') }}
                                 </button>
-                                
-                                
+
+
                             </div>
                         </div>
                     </form>
@@ -66,8 +66,8 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Submit') }}
                                 </button>
-                                
-                                
+
+
                             </div>
                         </div>
                     </form>

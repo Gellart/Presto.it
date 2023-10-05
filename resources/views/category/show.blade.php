@@ -4,7 +4,7 @@
         <div class="container">
 
             <h2 class="display-1 text-center text-dark">
-                {{ __('ui.category_ann') }} <!-- cambia nome categoria in base alla lingua impostata -->
+                {{ __('ui.category_ann') }} <!-- change language , change category language -->
                 <!-- quando parte la sessione se la lingua preferita del browser è italiano -->
                 @if (session('locale') == null && substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) == 'it')
                     {{ $category->name }}

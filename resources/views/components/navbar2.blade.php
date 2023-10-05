@@ -1,19 +1,20 @@
 <nav class="navbar acoli navbar-expand-lg shadow py-2 fixed-top bg-warning mb-5 ">
 
-
     <div class="container">
-        <!-- Logo che riporta alla Homepage -->
+
+        <!-- Logo for homepage -->
         <div class="small-circle" style="display: flex; justify-content: center; align-items: center;">
             <a class="navbar-brand" href="/">
                 <img src="{{ asset('images/logo.png') }}" class="small-logo ps-3" alt="logo">
             </a>
         </div>
 
-        <!-- Menu a tendina responsive -->
+        <!-- dropdown menu -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-md-center mb-2 mb-lg-0">
                 <!-- Link crea annuncio visibile solo a chi è autenticato -->
@@ -125,13 +126,15 @@
                 <!-- Menu multi lingua -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarLightDropdownMenuLink"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-globe fs-4"></i>
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-solid fa-globe fs-4"></i>
                         <!-- {{ __('ui.language') }} -->
                     </a>
                     <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                         <!-- Italiano -->
                         <li class="m-0 nav-link active me-2 g-light d-flex ">
-                            <x-_locale id="italiano" class="flag" lang="it" nation="it" value="it" />
+                            <x-_locale id="italiano" class="flag" lang="it" nation="it"
+                                value="it" />
                             <p class="mx-2">Italiano</p>
                         </li>
                         <!-- Inglese -->
@@ -150,4 +153,5 @@
             </ul>
         </div>
     </div>
+
 </nav>

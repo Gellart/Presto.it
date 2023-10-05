@@ -1,45 +1,8 @@
 <x-layout>
 
-
-    {{-- <div class="main_slider" style="background-image: url('https://images.pexels.com/photos/17117787/pexels-photo-17117787/free-photo-of-bianco-e-nero-paesaggio-uomo-persone.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <div class="container fill_height">
-            <div class="row align-items-center fill_height">
-                <div class="col">
-                    <div class="main_slider_content">
-                        <h6>Bug.it</h6>
-                        @if (auth()->check())
-                            <h1 class="">Crea il tuo annuncio!!</h1>
-                            <div class="red_button shop_now_button btn_crea_annuncio"><a
-                                    href="{{ route('announcements.create') }}">{{ __('ui.article_create') }}</a></div>
-                        @else
-                            <h1>Accedi registrati o per creare il tuo annuncio!!</h1>
-                            <div class="green_button shop_now_button bg-success"><a href="/login">{{ __('ui.login') }}</a></div>
-                            <div class="green_button shop_now_button bg-succes"><a href="/register">{{ __('ui.register') }}</a>
-                            </div>
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-
-   
-
-
-    {{-- sezione hero contenente bottone che porta alla creazione annuncio --}}
-    {{-- <header class="masthead">
-        <div class="container">
-            {{-- <div class="masthead-subheading">Welcome To Our Studio!</div>
-            <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> --}}
-    <!-- L'annuncio viene visualizzato solo dagli utenti loggati -->
-    {{-- @if (auth()->check())
-                <a class="btn btn-dark btn-xl text-uppercase"
-                    href="{{ route('announcements.create') }}">{{ __('ui.create_your_announcement') }}</a>
-            @endif
-        </div>
-    </header> --}}
+    {{-- hero section with a button for create an announcements --}}
     <section class="hero_homepage overflow-hidden">
+
         <div class="hero_homepage_content text-center d-flex flex-column justify-content-center align-items-center ">
             <!-- Messaggio che compare dopo aver compilato il form contattaci -->
             <!-- Ina caso di successo: -->
@@ -96,63 +59,7 @@
         </div>
     </section>
 
-    <!-- INTESTAZIONE CATEGORIE -->
-    {{-- <section class="page-section " id="category">
-        <div class="container ">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">{{ __('ui.categories') }}</h2>
-                <h3 class="section-subheading text-muted mt-5mb-5">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <!-- FOREACH CON LE CATEGORIE -->
-            <div class="row align-items-start  shadow p-5">
-                @foreach ($categories as $category)
-                    <div class=" col-12 col-lg-4 col-sm-6 mb-4 ">
-                        <!-- categorie-->
-                        <div class="category-item ">
-                            <a class="category-link" data-bs-toggle="modal" href="#categoryModal{{ $category->id }}">
-                                <div class="category-hover">
-                                    <div class="category-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <!-- contenitore dell'icona della categoria -->
-                                <div class="p-5 fs-1 text-center text-body">
-                                    <!-- aggiunto contenitore per dare più padding -->
-                                    <div class="p-5 fer-icons">
-                                        <!-- icona -->
-                                        {!! $category->icon !!}
-
-                                    </div>
-
-
-                                </div>
-                            </a>
-                            <div class="category-caption bg-transparent shadow">
-                                <div class="category-caption-heading text-truncate">
-                                    <!-- cambia nome categoria in base alla lingua impostata -->
-                                    <!-- quando parte la sessione se la lingua preferita del browser è italiano -->
-                                    @if (session('locale') == null && substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) == 'it')
-                                        {{ $category->name }}
-                                        <!-- quando parte la sessione se la lingua preferita del browser è francese -->
-                                    @elseif(session('locale') == null && substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) == 'fr')
-                                        {{ $category->fr }}
-                                        <!-- quando l'utente seleziona l'italiano -->
-                                    @elseif(session('locale') == 'it')
-                                        {{ $category->name }}
-                                        <!-- quando l'utente seleziona il francese -->
-                                    @elseif(session('locale') == 'fr')
-                                        {{ $category->fr }}
-                                        <!-- in tutti gli altri casi -->
-                                    @else
-                                        {{ $category->en }}
-                                    @endif
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
+    {{-- category --}}
     <div class="container-fluid mt-1 category-background-color">
         <div class="text-center p-5">
             <h2 class="section-heading text-uppercase">{{ __('ui.categories') }}</h2>
@@ -187,7 +94,7 @@
                                 <a class="btn btn-dark btn-xl text-uppercase ms-3"
                                     href="{{ route('categoryShow', compact('category')) }}">{{ __('visualizza') }}
                                 </a>
-                                
+
 
                             </div>
                         </div>
@@ -201,7 +108,7 @@
     </div>
 
     {{-- modale categorie --}}
-    @foreach ($categories as $category)
+    {{-- @foreach ($categories as $category)
         <div class="category-modal modal fade" id="categoryModal{{ $category->id }}" tabindex="-1" role="dialog"
             aria-hidden="true">
             <div class="modal-dialog">
@@ -266,7 +173,7 @@
                 </div>
             </div>
         </div>
-    @endforeach
+    @endforeach --}}
 
 
     <!-- ULTIMI ANNUNCI -->
@@ -342,9 +249,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     {{-- lavora con noi --}}
     <div class="container my-5 py-5 work_with_us">
@@ -435,10 +339,5 @@
             </form>
         </div>
     </section>
-
-
-
-
-
 
 </x-layout>

@@ -1,6 +1,8 @@
 <x-layout>
+
     <div class="py-5"></div>
-    <!-- Messaggi di errore -->
+
+    {{-- error message --}}
     <div class="container-fluid mb-5 bg-grey">
         @if (session()->has('message'))
             <div class="flex flex-row justify-center my2 alert alert-warning">
@@ -18,15 +20,16 @@
             </div>
         </header>
 
-        <!-- Contenitore del form Login -->
+        <!-- container login form -->
         <section>
             <div class="container pt-5 ">
                 <div class="row d-flex align-items-center justify-content-center ">
+
                     <div class="col-md-8 col-lg-7 col-xl-6">
-                        <!-- immagine laterale al login -->
-                        <img src="{{asset ('images/login.png')}}"
-                            class="img-fluid" alt="Phone image">
+                        <!-- side image -->
+                        <img src="{{ asset('images/login.png') }}" class="img-fluid" alt="Phone image">
                     </div>
+
                     <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 ">
                         @if ($errors->any())
                             @foreach ($errors->all() as $error)
@@ -38,7 +41,9 @@
 
                             <!-- Email input -->
                             <div class="form-outline mb-4 mt-5">
-                                <label class="form-label" for="form1Example13"><h3 class="text-dark">Email</h3></label>
+                                <label class="form-label" for="form1Example13">
+                                    <h3 class="text-dark">Email</h3>
+                                </label>
                                 <input name="email" type="email" id="form1Example13"
                                     class="form-control form-control-lg  rounded-2 border-0 px-4 shadow"
                                     placeholder="mario.rossi@gmail.com" />
@@ -47,7 +52,9 @@
 
                             <!-- Password input -->
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="form1Example23"><h3 class="text-dark">Password</h3></label>
+                                <label class="form-label" for="form1Example23">
+                                    <h3 class="text-dark">Password</h3>
+                                </label>
                                 <input name="password" type="password" id="form1Example23"
                                     class="form-control form-control-lg  rounded-2 border-0 px-4 shadow"
                                     placeholder="Zabra123!" />
@@ -93,4 +100,5 @@
             </div>
         </section>
     </div>
+
 </x-layout>
