@@ -1,0 +1,20 @@
+@import 'bootstrap';
+@import './style.css';
+/* @import './bootstrap.min.css'; */
+@import './flag-icons.css';
+
+@import './announcement.css';
+@import './show_announcements.css';
+@import './create_announcement.css';
+@import './preview_image.css';
+@import './category.css';
+@import './homepage_hero.css';
+@import './work_with_us.css';
+@import './navbar.css';
+@import './logo.css';
+@import './use_profile_index.css';
+@import './footer.css';
+@import './category_card.css';
+@import './title.css';
+@import './404.css';
+@import './announcements_hero.css'

@@ -1,0 +1,39 @@
+.slide{animation: slide 1s ease-in-out; transition: 0.5s;}
+.slideverse{animation: slideverse 1s ease; transition: 0.5s;}
+
+
+
+
+@keyframes fadeout {
+
+    100% {
+        opacity: 1;
+    }
+    0%, 20%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes slide{
+    0%{transform: translateX(-10rem) }
+    100%{transform: translateX(0rem) }
+    200% {
+        opacity: 1;
+    }
+    0%, 7%{
+        opacity: 0;
+    }
+    
+    
+}
+
+@keyframes slideverse{
+    0%{transform: translateX(10rem) }
+    100%{transform: translateX(0px) }
+    0%, 7%{
+        opacity: 0;
+    }
+    
+    
+}

@@ -1,0 +1,10 @@
+.ann_hero_image {
+    background-image: url('../../public/images/announcements');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-wrapper {
+    margin: 20px;
+    color: #fff;
+}

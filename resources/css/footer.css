@@ -1,0 +1,80 @@
+.bg-footer {
+    background-color: #000000;
+}
+
+.footer {
+    padding: 60px 0;
+    position: relative;
+    color: #000000;
+}
+
+.footer .logo-footer {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 3px 0;
+    letter-spacing: 1px;
+}
+
+.footer .footer-head {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+.footer .text-foot {
+    color: #adb5bd;
+}
+
+.footer .footer-list {
+    margin-bottom: 0;
+}
+
+.footer .footer-list .li-footer {
+    margin-bottom: 10px;
+}
+
+.footer .footer-list .li-footer .a-footer {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.footer .footer-list .li-footer .a-footer:hover {
+    color: #ffffff !important;
+}
+
+.footer .footer-list .li-footer:last-child {
+    margin-bottom: 0;
+}
+
+.footer.footer-bar {
+    padding: 30px 0;
+    border-top: 1px solid #ffffff;
+}
+
+.footer.footer-bar .payment-cards img {
+    height: 25px;
+}
+
+.social-icon.social .li-footer .a-footer {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.social-icon .li-footer .a-footer {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    width: 32px;
+    line-height: 30px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.rounded {
+    border-radius: 5px !important;
+}
